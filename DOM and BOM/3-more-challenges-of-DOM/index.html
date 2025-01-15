@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: #1a1a1a;
+            color: #fff;
+            text-align: center;
+        }
+        .highlight{
+            background-color: yellow;
+            font-weight: bold;
+            color: #1a1a1a;
+        }
+        .hidden{
+            display: none;
+        }
+    </style>
+    <title>Challenges of DOM</title>
+</head>
+<body>
+    <!-- Example-1-- Event handling of DOM -->
+     <h2>Event handling in DOM</h2>
+     <section id="section-1">
+        <h2>Event handling in DOM</h2>
+        <button id="clickMeButton">Click Me!</button>
+     </section>
+
+     <!-- Example-2 --Event delegation in DOM -->
+      <h2>Event delegation in DOM</h2>
+      <section id="section-2">
+        <ul id="teaList">
+            <li class="teaItem">Green Tea</li>
+            <li class="teaItem">Black Tea</li>
+            <li class="teaItem">Oolong Tea</li>
+        </ul>
+        <p>Click on any tea to select it!</p>
+      </section>
+
+      <!-- Example-3 Form handling -->
+       <section id="section-3">
+        <h2>Form Handling</h2>
+         <form id="feedbackForm">
+            <label for="feedbackInput">Your Feedback:</label>
+            <input type="text" id="feedbackInput" placeholder="Enter feedback">
+            <button type="submit">Submit your feedback<button>
+         </form>
+         <p id="feedbackDisplay"></p>
+       </section>
+
+       <!-- Example-4:DOM content loaded -->
+        <section id="section-4">        
+        <h2>DOM content loaded</h2>
+        <p id = "domStatus">Waiting for DOM content to load</p>
+    </section>
+
+    <!-- Example-5: CSS classes manipulation -->
+     <h2>CSS classes manipulation </h2>
+     <p id="descriptionText">This text will change color!</p>
+     <button id="toggleHighlight">Toggle highlight button</button>
+
+     <script src="script.js"></script>
+     
+</body>
+</html>
