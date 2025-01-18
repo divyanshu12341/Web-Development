@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    background-color: rgb(13, 13, 32);
+    height: 35%;
+    width: 30%;
+    outline: none;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.input-container{
+    margin-top: 10px;
+    color: #fff;
+}
+#city-input{
+    color: #fff;
+    background-color: rgb(0 0 0 / 69%); 
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    padding: 3px;
+}
+.hidden{
+    display: none;
+}
+.error-message{
+    color: red;
+}
+#temperature{
+    background-color: rgb(220, 151, 151);
+    padding: 8px;
+    margin-top: 5px;
+}
+#city-name{
+    background-color: rgb(200, 116, 116);
+    padding: 8px;
+    margin-top: 5px;
+}
+#description{
+     background-color: rgb(200, 112, 112);
+     padding: 8px;
+     margin-top: 5px;
+     color: #fff;
+}
+button{
+    background-color: rgb(77, 77, 222);
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    padding: 6px;
+    margin-left: 8px;
+    color: #fff;
+    
+}
