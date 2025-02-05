@@ -1,0 +1,115 @@
+body {
+    font-family: sans-serif;
+    background-color: #e3f2fd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0; /* Reset default body margin */
+}.container {
+    background-color: #fff;
+    padding: 20px; /* Consistent padding for the container */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    text-align: center;
+}
+
+h1 {
+    color: #2196f3;
+    margin-bottom: 20px; /* Consistent margin below h1 */
+}
+
+#quiz-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Ensure quiz container uses full width */
+}
+
+#question-container {
+    width: 100%;
+    margin-bottom: 20px; /* Consistent margin below question container */
+}
+
+#question-text {
+    font-size: 1.2em;
+    margin-bottom: 10px; /* Consistent margin below question text */
+    color: #1976d2;
+}
+
+#choices-list {
+    list-style: none;
+    padding: 0; /* Remove default list padding */
+    margin: 0;  /* Remove default list margin */
+    width: 100%;
+}
+
+#choices-list li {
+    margin-bottom: 10px; /* Consistent margin between list items */
+    border: 1px solid #bbdefb;
+    border-radius: 5px;
+    padding: 10px; /* Consistent padding within list items */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: left;
+
+}
+
+#choices-list li:hover {
+    background-color: #e0f2f7;
+}
+
+#choices-list li.selected {
+    background-color: #bbdefb;
+    border-color: #64b5f6;
+}
+
+button {
+    background-color: #2196f3;
+    color: white;
+    padding: 12px 20px; /* Consistent padding for buttons */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    margin-top: 10px; /* Consistent margin above buttons */
+}
+
+button:hover {
+    background-color: #1976d2;
+}
+.blue{
+    background-color:#1976d2 ;
+}
+.red{
+    background-color: red;
+}
+button.hidden {
+    display: none;
+}
+
+#result-container {
+    text-align: center;
+    margin-top: 20px; /* Consistent margin above result container */
+}
+
+#score {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px; /* Consistent margin below score */
+    color: #1565c0;
+}
+
+#restart-btn, #start-btn {
+    background-color: #2196f3;
+    margin-top: 10px; /* Consistent margin above buttons */
+}
+
+#restart-btn:hover, #start-btn:hover {
+    background-color: #1976d2;
+}
+.hidden{
+    display: none;
+}
