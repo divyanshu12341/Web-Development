@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React via CDN</title>
+</head>
+<body>
+    <h1>Hello</h1>
+    <div id="root"></div>
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+ <script>
+    // React element is an object 
+    /*  ** 
+        *
+        *{
+        * type:button
+        * props:{
+        *         children:'submit',
+        *         className:'btn btn-primary'
+        * }
+        * }
+                */
+     const btn =   ()=>React.createElement("button",{id:'btn'},React.createElement("span",{},"submit"));
+     const rootContainer = document.getElementById("root");
+     const root = ReactDOM.createRoot(rootContainer);
+     root.render(btn());
+        // <button id = "btn"><span>Submit</span></button>
+ </script>
+</body>
+</html>
